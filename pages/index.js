@@ -12,23 +12,15 @@ const HomePage = () => {
     router.push('/student')
   }
   
-  // const handleStudentClick = () => {
-  //   router.push('/timetable')
-  // }
 
   const handleTeacherClick = () => {
     router.push('/auth')
   }
-
-  // const StudentButton = ({ onClick }) => {
-  //   return (
-  //     <button onClick={onClick}>Student</button>
-  //   )
- // }
   
   return (
     <div>
-      <h1>Welcome to my Next.js app!</h1>
+      <h1>Auto Timetable Generator</h1>
+      <br></br>
       <button onClick={handleStudentClick}>Student</button>
       <button onClick={handleTeacherClick}>Teacher</button>
       
