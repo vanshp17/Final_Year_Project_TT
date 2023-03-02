@@ -26,7 +26,7 @@ class CascadingDropdowns extends React.Component {
 
   handleDivisionChange = (event) => {
     this.setState({ division: event.target.value });
-  };
+  }; // 454654656
 
   handleSubmit = (event) => {
     event.preventDefault();
