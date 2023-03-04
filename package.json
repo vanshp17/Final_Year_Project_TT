@@ -18,8 +18,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
-    "rsuite": "^5.28.0"
+    "rsuite": "^5.28.0",
+    "@babel/runtime": "7.21.0",
+      "@faker-js/faker": "latest",
+      "@rsuite/icons": "latest"
   }
+
+
 
 }
 

@@ -11,7 +11,7 @@ class CASDdrop extends Component{
             selectddl: '',
         };
     }
-
+    
     componentDidMount() {
         this.setState({
             DDL1 : [
@@ -27,8 +27,17 @@ class CASDdrop extends Component{
         this.setState({selectddl : e.target.value });
         this.setState({ DDL2: this.state.DDL1.find(x => x.name === e.target.value).DDL2 })
     }
-
+    
+    
     render() {
+        const CASDdrop = () => {
+            const router = useRouter
+
+            const handleSubmitClick = () => {
+                router.push('/timetable')
+            
+          }
+        }
         return (
             <div>
                       <h1>Auto Timetable Generator</h1>
@@ -57,16 +66,13 @@ class CASDdrop extends Component{
                     }
                 </select>
                 </center>
-{/* const handleSubmitClick = () => {
-    router.push('/student')
-  } */}
 
-<br/><br/><br/><br/><br/><br/>
-<center>
-    {/* <button onClick={handleSubmitClick}>Submit</button> */}
-    <button>Submit</button>
+                    <br/><br/><br/><br/><br/><br/>
+                    <center>
+                        <button onClick={handleSubmitClick}>Submit</button>
+                        {/* <button>Submit</button> */}
 
-</center>
+                    </center>
             </div>
         )
     }
@@ -76,6 +82,5 @@ class CASDdrop extends Component{
 
   
 
-  
 
 export default CASDdrop;
